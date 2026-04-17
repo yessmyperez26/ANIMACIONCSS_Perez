@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title> DRA LISA SU </title>
+        <style>
+            h1{
+                font-family: "sans-serif";
+                font-size: 70px; /* tamaño más grande de letra  */
+                color:rgba(8, 8, 8, 0);
+                text-align: center;
+                animation-name : titulo; /* titulo para la animacion*/
+                animation-duration: 3s; /* duracion de la animacion*/
+                animation-iteration-count: 1; /* cant, de veces que se realiza la animacion*/
+                animation-fill-mode: forwards; /* indica cual es el ultimo
+                 estado que se queda*/
+                animation-delay: 0s; /* inicia primero */
+            }
+
+            @keyframes titulo{
+                from{ color:rgba(8, 8, 8, 0); }
+                to{ color: rgba(8, 8, 8, 1); }
+            }
+
+            p{
+                text-align : center;
+                font-family:"sans-serif";
+                font-weight: bold;
+                color: rgba(0,0,0,0);
+                animation-name: texto;
+                animation-duration: 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards; /* cambio importante */
+            }
+
+            /* subtítulo */
+            p:nth-of-type(1){
+                animation-delay: 3s;
+            }
+
+            /* párrafo 1 */
+            p:nth-of-type(2){
+                animation-delay: 9s;
+            }
+
+            /* párrafo 2 */
+            p:nth-of-type(3){
+                animation-delay: 12s;
+            }
+
+            /* corazón */
+            p:nth-of-type(4){
+                animation-delay: 15s;
+            }
+
+            @keyframes texto{
+                from{ color:rgba(0, 0, 0, 0); }
+                to{ color:rgba(0,0,0,1); }
+            }
+
+            img{
+                height : 300px;
+                width: 300px;
+                display:block;
+                margin:auto;
+                opacity:0;
+                animation: imagen 3s 6s 1 forwards; /* aparece después del subtítulo */
+            }
+
+            @keyframes imagen{
+                from{ opacity: 0; }
+                to{ opacity: 1; }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> DRA LISA SU </h1>
+
+        <p> CEO de AMD y lider en la innovacion tecnologica </p>
+
+        <img src ="img/logo.png">
+
+        <p>
+            La Dra. Lisa Su es una destacada ingeniera y ejecutiva de negocios, actual presidenta y CEO de AMD 
+        </p>
+
+        <p>
+            Su visión ha transformado a AMD de una empresa con dificultades a un líder tecnológico que impulsa la próxima era de la inteligencia artificial. 
+        </p>
+
+        <p> ♡ </p>
+    </body>
+</html>
